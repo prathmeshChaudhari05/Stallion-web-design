@@ -7,3 +7,11 @@ To view the website, you can simply open the index.html file in a web browser. H
 * Simple navigation menu that allows users to easily access different pages of the website.
 * Placeholder content that can be replaced with actual content for the company.
 * Basic styling using CSS that can be customized to fit the company's branding.
+## Basic Plan
+* Day 1 = Planning and Wireframing
+* Day 2 = Finalize the [Design] (https://www.figma.com/file/mJFQN8eXQFhadV4ZDlezNL/Stallion-Design?node-id=0%3A1&t=H3CVMfyzbcb0fJbs-1)
+* Day 3= Basic Website Skeleton using HTML 
+* Day 4 = Basic Website Skeleton using HTML
+* Day 5 = Adding some styling using CSS
+* Day 6 = Adding some Styling using CSS
+* Day 7 = Some enhancement in Design
