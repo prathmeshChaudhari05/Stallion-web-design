@@ -1,0 +1,20 @@
+* {
+    background-color: #161B21;
+}
+
+.navbar {
+    background-color: #161B21 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link, a.nav-link {
+    color: #fff !important;
+}
+
+.navbar-brand, #nav-item-active{
+    color: #04ACB4 !important;
+}
+
+.navbar-toggler-icon{
+    color: #04ACB4 !important;
+    background-color: #04ACB4 !important;
+}
