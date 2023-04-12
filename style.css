@@ -6,15 +6,65 @@
     background-color: #161B21 !important;
 }
 
-.navbar-dark .navbar-nav .nav-link, a.nav-link {
+.navbar-dark .navbar-nav .nav-link,
+a.nav-link {
     color: #fff !important;
 }
 
-.navbar-brand, #nav-item-active{
+.navbar-brand,
+#nav-item-active {
     color: #04ACB4 !important;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     color: #04ACB4 !important;
     background-color: #04ACB4 !important;
+}
+
+li.nav-item:hover {
+    text-decoration: underline;
+    text-decoration-color: #04ACB4;
+}
+
+.btn-group button {
+    background-color: #161B21;
+    border-color: #161B21;
+    color: #fff;
+}
+
+.btn-group button:hover {
+    border-color: #04ACB4;
+    color: #04ACB4;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.card {
+    height: 400px;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .carousel-item img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item img {
+        max-width: 60%;
+        height: auto;
+    }
 }
