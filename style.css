@@ -11,6 +11,10 @@ a.nav-link {
     color: #fff !important;
 }
 
+#carousal-text{
+    color: black;
+}
+
 .navbar-brand,
 #nav-item-active, h4.text-center, h4.text-center>span {
     color: #04ACB4 !important;
@@ -30,11 +34,13 @@ li.nav-item:hover {
     background-color: #161B21;
     border-color: #161B21;
     color: #fff;
+    border-color: #04ACB4;
 }
 
 .btn-group button:hover {
     border-color: #04ACB4;
-    color: #04ACB4;
+    color: #fff;
+    background-color: #04ACB4;
 }
 
 .caption-text{
