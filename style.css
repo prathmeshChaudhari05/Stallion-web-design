@@ -17,8 +17,9 @@ a.nav-link {
 
 .navbar-brand,
 #nav-item-active,
+h4.cont-title,
 h4.text-center,
-h4.text-center>span {
+h4.cont-title>span {
     color: #04ACB4 !important;
 }
 
@@ -30,6 +31,11 @@ h4.text-center>span {
 li.nav-item:hover {
     text-decoration: underline;
     text-decoration-color: #04ACB4;
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .btn-group button {
@@ -78,20 +84,21 @@ li.nav-item:hover {
     height: 30rem;
 }
 
-#about-container{
-    color: white; 
-    margin: 15px 5.5rem;
+#about-container {
+    color: white;
+    margin: 15px 9rem;
 }
 
 @media (max-width: 480px) {
-     /* {
+    /* {
         height: 20rem;
     } */
 
-    #about-container{
+    #about-container {
         margin: 15px 2rem;
         display: block !important;
     }
+
     .carousel-item {
         height: 12rem;
     }
@@ -102,8 +109,18 @@ li.nav-item:hover {
         object-fit: contain;
     }
 
-    .carousel-indicators{
+    .carousel-indicators {
         top: 0rem;
+    }
+    .container{
+        width: 80% !important;
+    }
+
+    .col-md-4{
+        margin-bottom: 1rem;
+    }
+    .card{
+        border: none;
     }
 }
 
@@ -118,11 +135,22 @@ li.nav-item:hover {
         height: auto;
     }
 }  */
+.card {
+    border-right: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    /* transform: scale(1.05); */
+    box-shadow: 0px 0px 10px 0px rgba(4, 172, 180, 0.75);
+}
 
 .card-img-top {
     height: 80px;
 }
 
-.border-right {
-    border-color: #04ACB4 !important;
+.border-right,
+.border-left {
+    border-color: rgb(4, 172, 180) !important;
+    border-width: 3px !important;
 }

@@ -20,47 +20,63 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+
+    <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script> -->
+
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <img src="\static\Stallion-Logo 2.png" width="40" height="50" class="d-inline-block align-top mr-2" alt="">
         <b>
             <a class="navbar-brand" href="#">Stallion</a>
         </b>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="container-fluid">
-                <ul class="navbar-nav justify-content-center">
-                    <li class="nav-item active mx-3">
-                        <a class="nav-link" id="nav-item-active" href="#">Home </a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Achievement</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Team</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="btn-group pr-2" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Petrol </button>
-            <button type="button" class="btn btn-secondary">Electric</button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- <div class="container-fluid"> -->
+            <ul class="navbar-nav mx-auto ml-auto">
+                <li class="nav-item active mx-3">
+                    <a class="nav-link" id="nav-item-active" href="#">Home </a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Achievement</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="btn-group pr-2" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Petrol </button>
+                <button type="button" class="btn btn-secondary">Electric</button>
+            </div>
+            <!-- </div> -->
         </div>
     </nav>
 
-    <!-- Carousal -->
+
     <div id="myCarousel" class="carousel slide" data-pause="false"><!--data-ride="carousel"-->
         <div class="carousel-inner">
             <!-- Carousal 1 -->
@@ -125,15 +141,29 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <!-- Carousal End -->
 
-    <!-- <hr style="margin: 0 2em; border-top: 3px solid #04ACB4; border-radius: 10px;"> -->
+
+    <div class="d-flex align-items-center mt-5" id="about-container">
+        <img src="\static\Stallion-Logo 2.png" class="img-fluid mr-2" alt="Your Image"
+            style="width: 200px; height: 200px;">
+        <div class="caption-text">
+            <h4 class="cont-title">What is Efficycle ?</h4>
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur. Dictum pellentesque aenean massa id
+                pellentesque aliquet
+                fringilla. Ultrices at ornare quam arcu et eget interdum bibendum. Commodo vel dolor risus suspendisse.
+                Dignissim velit bibendum sagittis dictum nisi condimentum pharetra. Dictum turpis mauris justo sed
+                sagittis est nullam mauris nisl. <span>Non tempus eget laoreet</span> nisl montes diam adipiscing.
+                Viverra morbi
+                aliquam sit suspendisse diam elementum morbi nulla erat. Tincidunt faucibus viverra senectus venenatis
+                at.</p>
+        </div>
+    </div>
 
     <div class="d-flex align-items-center" id="about-container">
         <img src="\static\Stallion-Logo 2.png" class="img-fluid mr-2" alt="Your Image"
             style="width: 200px; height: 200px;">
         <div class="caption-text">
-            <h4 class="text-center">What is Efficycle ?</h4>
+            <h4 class="cont-title">What is Efficycle ?</h4>
             <p class="text-justify">Lorem ipsum dolor sit amet consectetur. Dictum pellentesque aenean massa id
                 pellentesque aliquet
                 fringilla. Ultrices at ornare quam arcu et eget interdum bibendum. Commodo vel dolor risus suspendisse.
@@ -151,8 +181,8 @@
         <div class="caption-text">
             <h4 class="text-center">What is Efficycle ?</h4>
             <p class="text-justify">Lorem ipsum dolor sit amet consectetur. Dictum pellentesque aenean massa id
-                pellentesque aliquet
-                fringilla. Ultrices at ornare quam arcu et eget interdum bibendum. Commodo vel dolor risus suspendisse.
+                pellentesque aliquet fringilla. Ultrices at ornare quam arcu et eget interdum bibendum. Commodo vel
+                dolor risus suspendisse.
                 Dignissim velit bibendum sagittis dictum nisi condimentum pharetra. Dictum turpis mauris justo sed
                 sagittis est nullam mauris nisl. <span>Non tempus eget laoreet</span> nisl montes diam adipiscing.
                 Viverra morbi
@@ -161,22 +191,23 @@
         </div>
     </div>
 
-    <!-- <hr style="margin: 0 2em; border-top: 3px solid #04ACB4; border-radius: 10px;"> -->
-    <!-- margin :top right bottom left; -->
-    <div class="container my-3">
+
+    <div class="container" id="cont-my3">
         <div class="row">
             <!-- Column 1 -->
             <div class="col-md-4">
                 <div class="card">
                     <img src="static\About-Us-Img.png" class="card-img-top" alt="Image 1">
                     <div class="card-body">
-                        <h5 class="card-title text-center">Card 1</h5>
-                        <p class="card-text text-justify">This is the text for Card 1.</p>
+                        <h5 class="card-title text-center">About Us</h5>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur. Dictum pellentesque
+                            aenean massa id pellentesque aliquet fringilla. Ultrices at ornare quam arcu et eget
+                            interdum bibendum.</p>
                     </div>
                 </div>
             </div>
             <!-- Column 2 -->
-            <div class="col-md-4 border-right border-left">
+            <div class="col-md-4">
                 <div class="card">
                     <img src="static\Vision-Img.png" class="card-img-top" alt="Image 1">
                     <div class="card-body">
