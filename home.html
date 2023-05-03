@@ -65,7 +65,7 @@
         <div class="carousel-inner">
             <!-- Carousal 1 -->
             <!-- data-interval="6000" milliseconds NOT seconds! -->
-            <div class="carousel-item active" data-interval="6000">
+            <div class="carousel-item active" data-interval="5000">
                 <img class="first-slide" src="static\Group 100.png" alt="First slide">
                 <div class="container">
                     <div class="carousel-caption d-none d-md-block text-left">
@@ -80,7 +80,7 @@
             </div>
 
             <!-- Carousal 2 -->
-            <div class="carousel-item" data-interval="12000">
+            <div class="carousel-item" data-interval="5000">
                 <img class="second-slide" src="\static\GoKart-Info-Card.png" alt="Second slide">
                 <div class="container">
                     <div class="carousel-caption d-none d-md-block">
@@ -94,7 +94,7 @@
                 </div>
             </div>
             <!-- Carousal 3 -->
-            <div class="carousel-item" data-interval="24000">
+            <div class="carousel-item" data-interval="5000">
                 <img class="third-slide"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
                     alt="Third slide">
@@ -126,11 +126,10 @@
         </a>
     </div>
     <!-- Carousal End -->
-    <br>
-    <br>
-    <hr style="margin: 0 2em; border-top: 3px solid #04ACB4; border-radius: 10px;">
 
-    <div class="d-flex align-items-center" style="color: white; margin: 15px 4.5rem;">
+    <!-- <hr style="margin: 0 2em; border-top: 3px solid #04ACB4; border-radius: 10px;"> -->
+
+    <div class="d-flex align-items-center" id="about-container">
         <img src="\static\Stallion-Logo 2.png" class="img-fluid mr-2" alt="Your Image"
             style="width: 200px; height: 200px;">
         <div class="caption-text">
@@ -146,7 +145,7 @@
         </div>
     </div>
 
-    <div class="d-flex align-items-center flex-row-reverse" style="color: white; margin: 15px 4.5rem;">
+    <div class="d-flex align-items-center flex-row-reverse" id="about-container">
         <img src="\static\Stallion-Logo 2.png" class="img-fluid mr-2" alt="Your Image"
             style="width: 200px; height: 200px;">
         <div class="caption-text">
@@ -162,36 +161,36 @@
         </div>
     </div>
 
-    <hr style="margin: 0 2em; border-top: 3px solid #04ACB4; border-radius: 10px;">
-<!-- margin :top right bottom left; -->
+    <!-- <hr style="margin: 0 2em; border-top: 3px solid #04ACB4; border-radius: 10px;"> -->
+    <!-- margin :top right bottom left; -->
     <div class="container my-3">
         <div class="row">
             <!-- Column 1 -->
-            <div class="col-md-4 border-right">
+            <div class="col-md-4">
                 <div class="card">
-                    <img src="static\Gokart.png" class="card-img-top" alt="Image 1">
+                    <img src="static\About-Us-Img.png" class="card-img-top" alt="Image 1">
                     <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
-                        <p class="card-text">This is the text for Card 1.</p>
+                        <h5 class="card-title text-center">Card 1</h5>
+                        <p class="card-text text-justify">This is the text for Card 1.</p>
                     </div>
                 </div>
             </div>
             <!-- Column 2 -->
-            <div class="col-md-4 border-right">
+            <div class="col-md-4 border-right border-left">
                 <div class="card">
-                    <img src="static\Gokart.png" class="card-img-top" alt="Image 1">
+                    <img src="static\Vision-Img.png" class="card-img-top" alt="Image 1">
                     <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
+                        <h5 class="card-title text-center">Card 1</h5>
                         <p class="card-text">This is the text for Card 1.</p>
                     </div>
                 </div>
             </div>
             <!-- Column 3 -->
-            <div class="col-md-4 border-right">
+            <div class="col-md-4">
                 <div class="card">
-                    <img src="static\Gokart.png" class="card-img-top" alt="Image 1">
+                    <img src="static\Mission-Img.png" class="card-img-top" alt="Image 1">
                     <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
+                        <h5 class="card-title text-center">Card 1</h5>
                         <p class="card-text">This is the text for Card 1.</p>
                     </div>
                 </div>
@@ -208,6 +207,14 @@
     navbarToggler.addEventListener("click", () => {
         navbarCollapse.classList.toggle("show");
     });
+
+    $(document).ready(function () {
+        // Set the interval to 5 seconds
+        $('#myCarousel').carousel({
+            interval: 5000
+        });
+    });
+
 </script>
 
 </html>

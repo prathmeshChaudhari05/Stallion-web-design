@@ -11,12 +11,14 @@ a.nav-link {
     color: #fff !important;
 }
 
-#carousal-text{
+#carousal-text {
     color: black;
 }
 
 .navbar-brand,
-#nav-item-active, h4.text-center, h4.text-center>span {
+#nav-item-active,
+h4.text-center,
+h4.text-center>span {
     color: #04ACB4 !important;
 }
 
@@ -43,9 +45,10 @@ li.nav-item:hover {
     background-color: #04ACB4;
 }
 
-.caption-text{
+.caption-text {
     margin: 0rem 1.5rem;
 }
+
 .carousel-indicators {
     position: relative;
     top: 2em;
@@ -56,7 +59,7 @@ li.nav-item:hover {
     bottom: auto;
 }
 
-.carousel-caption .title{
+.carousel-caption .title {
     color: #04ACB4;
 }
 
@@ -69,23 +72,57 @@ li.nav-item:hover {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    height: 20rem;
+    /* width: 100%;
+    height: 100%; */
+    object-fit: contain;
+    height: 30rem;
 }
 
-@media (min-width: 768px) {
+#about-container{
+    color: white; 
+    margin: 15px 5.5rem;
+}
+
+@media (max-width: 480px) {
+     /* {
+        height: 20rem;
+    } */
+
+    #about-container{
+        margin: 15px 2rem;
+        display: block !important;
+    }
+    .carousel-item {
+        height: 12rem;
+    }
 
     .carousel-item img {
         max-width: 80%;
-        height: auto;
+        height: 12rem;
+        object-fit: contain;
+    }
+
+    .carousel-indicators{
+        top: 0rem;
     }
 }
 
-@media (min-width: 992px) {
+/* @media (max-width: 992px) {
+
+    .carousel-item {
+        height: 20rem;
+    }
+
     .carousel-item img {
         max-width: 60%;
         height: auto;
     }
+}  */
+
+.card-img-top {
+    height: 80px;
+}
+
+.border-right {
+    border-color: #04ACB4 !important;
 }
