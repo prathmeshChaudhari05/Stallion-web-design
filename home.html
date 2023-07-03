@@ -13,9 +13,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
@@ -29,17 +31,19 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script> -->
-
-
 </head>
 
 <body>
+    <!-- add animation to navbar -->
+
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <img src="\static\Stallion-Logo 2.png" width="40" height="50" class="d-inline-block align-top mr-2" alt="">
-        <b>
-            <a class="navbar-brand" href="#">Stallion</a>
-        </b>
+        <div>
+            <img src="\static\Stallion-Logo 2.png" width="40" height="50" class="d-inline-block align-top mr-2" alt="">
+            <b>
+                <a class="navbar-brand" href="#">Stallion</a>
+            </b>
+        </div>
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -84,13 +88,13 @@
             <div class="carousel-item active" data-interval="5000">
                 <img class="first-slide" src="static\Group 100.png" alt="First slide">
                 <div class="container">
-                    <div class="carousel-caption d-none d-md-block text-left">
-                        <p>Lorem Ipsum.</p>
+                    <div class="carousel-caption d-md-flex text-left">
+                        <!-- <p>Lorem Ipsum.</p>
                         <p id="carousal-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit
                             non mi porta
                             gravida
-                            at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
+                            at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                        </p> -->
                     </div>
                 </div>
             </div>
@@ -99,28 +103,30 @@
             <div class="carousel-item" data-interval="5000">
                 <img class="second-slide" src="\static\GoKart-Info-Card.png" alt="Second slide">
                 <div class="container">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p class="title">Another example headline.</p>
+                    <div class="carousel-caption d-md-flex">
+                        <h5 class="title">Another example headline.</h5>
                         <p id="carousal-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit
                             non mi porta
                             gravida
-                            at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                            at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                        </p>
+                        <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p> -->
                     </div>
                 </div>
+                <img src="static/Gokart.png" alt="Second Slide" id="slide-img-2">
             </div>
+
             <!-- Carousal 3 -->
             <div class="carousel-item" data-interval="5000">
                 <img class="third-slide"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
                     alt="Third slide">
                 <div class="container">
-                    <div class="carousel-caption d-none d-md-block text-right">
+                    <div class="carousel-caption d-md-flex text-left">
                         <h1>One more for good measure.</h1>
                         <p id="carousal-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit
-                            non mi porta
-                            gravida
-                            at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -132,20 +138,22 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+
+        <!-- Carousel Button -->
+        <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-        </a>
+        </a> -->
     </div>
 
 
     <div class="d-flex align-items-center mt-5" id="about-container">
         <img src="\static\Stallion-Logo 2.png" class="img-fluid mr-2" alt="Your Image"
-            style="width: 200px; height: 200px;">
+            style="width: 200px; height: 200px;" id="card-imga">
         <div class="caption-text">
             <h4 class="cont-title">What is Efficycle ?</h4>
             <p class="text-justify">Lorem ipsum dolor sit amet consectetur. Dictum pellentesque aenean massa id
@@ -212,7 +220,11 @@
                     <img src="static\Vision-Img.png" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                         <h5 class="card-title text-center">Card 1</h5>
-                        <p class="card-text">This is the text for Card 1.</p>
+                        <p class="card-text">In publishing and graphic design, Lorem ipsum is a placeholder text
+                            commonly
+                            used to demonstrate the visual form of a document or a typeface without relying on
+                            meaningful
+                            content. </p>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,11 @@ body {
     background-color: #161B21;
 }
 
+/* add animation to navbar */
+.navbar {
+    transition: all 0.4s ease-in-out;
+}
+
 .navbar {
     background-color: #161B21 !important;
 }
@@ -83,7 +88,11 @@ li.nav-item:hover {
     object-fit: contain;
     height: 30rem;
 }
-
+#slide-img-2{
+    height: 23rem !important;
+    top: 5rem !important;
+    left: 65rem !important;
+}
 #about-container {
     color: white;
     margin: 15px 9rem;
@@ -93,7 +102,10 @@ li.nav-item:hover {
     /* {
         height: 20rem;
     } */
-
+    #carousal-text {
+        color: black;
+        
+    }
     #about-container {
         margin: 15px 2rem;
         display: block !important;
@@ -104,7 +116,7 @@ li.nav-item:hover {
     }
 
     .carousel-item img {
-        max-width: 80%;
+        max-width: 90%;
         height: 12rem;
         object-fit: contain;
     }
@@ -112,32 +124,55 @@ li.nav-item:hover {
     .carousel-indicators {
         top: 0rem;
     }
-    .container{
+
+    .container {
         width: 80% !important;
+        height: 12rem !important;
     }
 
-    .col-md-4{
+    .col-md-4 {
         margin-bottom: 1rem;
     }
-    .card{
+
+    .card {
         border: none;
+    }
+
+    .img-fluid {
+        display: block;
+        margin: 0 43px;
+    }
+
+    .cont-title {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    #slide-img-2{
+        height: 5rem !important;
+        top: 55px !important;
+        left: 17rem !important;
+    }
+    /* .card-img-top {
+        height: 20rem;
+    } */
+    .card-img-top {
+        height: 13rem !important;
+        width: 100%   !important;
+        object-fit: contain !important;
+        padding-top: 7px !important;
     }
 }
 
-/* @media (max-width: 992px) {
 
-    .carousel-item {
-        height: 20rem;
-    }
-
-    .carousel-item img {
-        max-width: 60%;
-        height: auto;
-    }
-}  */
 .card {
     border-right: 3px;
     transition: all 0.3s ease-in-out;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15rem;
+    object-fit: contain;
 }
 
 .card:hover {
@@ -145,12 +180,12 @@ li.nav-item:hover {
     box-shadow: 0px 0px 10px 0px rgba(4, 172, 180, 0.75);
 }
 
-.card-img-top {
+/* .card-img-top {
     height: 80px;
-}
+} */
 
-.border-right,
+/* .border-right,
 .border-left {
     border-color: rgb(4, 172, 180) !important;
     border-width: 3px !important;
-}
+} */
